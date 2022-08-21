@@ -1,0 +1,559 @@
+.coupon-holder {
+    display: none;
+    }
+    
+    .checkout-cart-display.order_info .rtc_line_item {
+        display: none!important;
+    }
+    
+    .checkout-cart-display.order_info .rtc_line_item {
+        display: none!important;
+    }
+    
+    .checkout-cart-display.line_items .subtotal-line {
+        display: none;
+    }
+    .checkout-cart-display.line_items .shipping-line {
+        display: none;
+    }
+    
+    .checkout-cart-display.line_items .tax-line {
+        display: none;
+    }
+    
+    .checkout-cart-display.line_items .total-line {
+        display: none;
+    }
+    .checkout-cart-display.line_items .discount-line {
+        display: none;
+    }
+    
+    tr.total-line {
+        font-size: 1.125rem;
+        font-weight: 800;
+        vertical-align: top;
+    }
+    
+    tr.total-line .checkout-money {
+        font-size: 1.125rem;
+        font-weight: 800;
+    }
+    
+    .rtc_line_item:last-child {
+        border-bottom: 0px!important;
+        padding-bottom: 0px;
+    }
+    
+    td.checkout-money {
+        font-weight: 500;
+    }
+    
+    .checkout-cart-display.order_info table {
+        line-height: 2;
+    }
+    
+    
+    
+    .inner-addons {
+    display: none;
+    }
+    
+
+
+.input-flds {
+    border: 1px solid #dcdcdf;
+    /* box-shadow: 0 0 0 1px #7c7c7c, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%); */
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in, -webkit-filter 50000s;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in, filter 50000s;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in, filter 50000s, -webkit-filter 50000s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-flds:focus {
+    z-index: 15 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(208, 110, 18, 0.3), 0 1px 1px 0 rgba(0, 0, 0, 0.07), 0 0 0 3px rgba(208, 110, 18, 0.3) !important;
+}
+
+
+/* This handles the billing address fields  */
+
+
+/* It will only dislay the billing fields if they click "Use a different billing address" */
+
+.checkout-billing-fields {
+    display: none;
+}
+
+.checkout-use-billing-address .checkout-billing-fields {
+    display: block;
+}
+
+.input-flds::-moz-placeholder,
+.input-flds::-webkit-input-placeholder {
+    color: rgba(26, 26, 26, 0.4);
+}
+
+.input-flds::-moz-placeholder,
+.input-flds::-webkit-input-placeholder,
+.input-flds::placeholder {
+    color: rgba(26, 26, 26, 0.4);
+}
+
+.input-label {
+    pointer-events: none;
+}
+
+.pristine-error.checkout-validation-help-text {
+    color: #c93c1d;
+    font-size: 9px;
+    text-align: left;
+    width: 100%;
+}
+
+.checkout-invalid-field input,
+.checkout-invalid-field select {
+    z-index: 1;
+    box-shadow: 0 0 0 1px #ef9896, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    z-index: 10;
+}
+
+.checkout-invalid-field img.invalid-icon {
+    display: inline-block;
+}
+
+.checkout-valid-field .input-flds {
+    box-shadow: inset 0 0 0 3rem #ecf0ea;
+    border: 1px solid #29af5c;
+    z-index: 10;
+    color: #000;
+}
+
+
+.w-input:focus,
+.w-select:focus {
+    border-color: #cc9f75 !important;
+    outline: 0;
+}
+
+
+
+td:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.checkout-money {
+    text-align: right;
+}
+
+
+
+.w-select {
+    /* resetting default form style*/
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.caret-down {
+    pointer-events: none;
+}
+
+.white-overlay {
+    background-color: rgb(255 255 255 / 95%);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/*------------------------ Loading spinner ------------------------*/
+
+.submitting .loader-wrapper {
+    display: flex;
+}
+
+.loader_wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc33a;
+    z-index: 10;
+    cursor: no-drop;
+}
+
+
+.iti {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+}
+
+.iti__flag-container {
+    z-index: 50;
+}
+
+ul#iti-0__country-listbox {
+    z-index: 50;
+}
+
+.iti__selected-flag {
+    padding: 0 10px 0 10px;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="tel"],
+.iti--allow-dropdown input[type="text"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="tel"],
+.iti--separate-dial-code input[type="text"] {
+    padding-left: 48px;
+}
+
+.white-overlay {
+    background-color: rgb(255 255 255 / 95%);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    min-width: 220px;
+}
+
+.spinner {
+    border: 6px solid #e2e2e2;
+    border-top: 6px solid #297fbc;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+.spinner-icon {
+    position: relative;
+}
+
+.spinner-icon .spinner-icon-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -19px;
+    margin-top: -70px;
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-text {
+    text-align: center;
+    color: #526473;
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.es_hide {
+    display: none;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+    100% {
+        background-position: 450px 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+    100% {
+        background-position: 450px 0;
+    }
+}
+
+
+
+.w-checkbox-input.w-checkbox-input--inputType-custom.checkmark-addon.w--redirected-checked:after {
+    content: "on";
+    color: #fff;
+    margin-left: 8px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-size: 10px;
+    float: left;
+}
+
+div#stripe-cc-number {
+    padding: 15px;
+}
+
+.klarna-header {
+    display: none;
+}
+
+.paypal-header {
+    display: none;
+}
+
+.ideal-header {
+    display: none;
+}
+
+.bancontact-header {
+    display: none;
+}
+
+.checkout-combo-form .cc-form {
+    display: none;
+}
+
+.checkout-combo-form .klarna-form {
+    display: none;
+}
+
+.checkout-combo-form .bancontact-form {
+    display: none;
+}
+
+.checkout-combo-form .ideal-form {
+    display: none;
+}
+
+.checkout-combo-form .paypal-form {
+    display: none;
+}
+
+.checkout-combo-form .klarna-form .cc-form {
+    display: none;
+}
+
+.checkout-combo-form .bancontact-form .cc-form {
+    display: none;
+}
+
+.checkout-combo-form .ideal-form .cc-form {
+    display: none;
+}
+
+.checkout-combo-form .paypal-form .cc-form {
+    display: none;
+}
+
+.checkout-combo-form.checkout-combo-ideal .ideal-form {
+    display: block;
+}
+
+.checkout-combo-form.checkout-combo-credit .cc-form {
+    display: block;
+}
+
+.checkout-combo-form.checkout-combo-paypal .paypal-form {
+    display: block;
+}
+
+.checkout-combo-form.checkout-combo-bancontact .bancontact-form {
+    display: block;
+}
+
+.checkout-combo-form.checkout-combo-klarna .klarna-form {
+    display: block;
+}
+
+
+
+.compare-at-price {
+    text-decoration: line-through;
+}
+
+button.checkout-coupon-button {
+    display: none;
+}
+
+td.checkout-money {
+    text-align: right;
+}
+
+.discount-line .checkout-money {
+    font-weight: 600 !important;
+}
+
+
+
+
+
+td.checkout-money {
+    font-weight: 400;
+}
+
+tr.product-line {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taxPendingMessage {
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin-top: -0.2rem;
+}
+
+
+
+.loader-coffee {
+    display: flex;
+}
+
+.submitting {
+    display: flex;
+}
+
+tr.discount-line {
+    margin-top: 15px;
+}
+
+
+
+.active {
+    transition: 0.1s;
+    transform: rotate(180deg);
+}
+
+input#coupon_field {
+    display: block !important;
+}
+
+form#coupon_form {
+    display: block !important;
+}
+
+.refill-mobo-only p.refill-card {
+    padding: 0px !important;
+    border: 0px !important;
+    margin-top: 0px !important;
+}
+
+.checkout-coupon-button {
+    display: flex !important;
+}
+
+.white-overlay {
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    min-width: 220px;
+}
+
+.spinner {
+    border: 6px solid #e2e2e2;
+    border-top: 6px solid #297fbc;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+.spinner-icon {
+    position: relative;
+}
+
+.spinner-icon .spinner-icon-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -19px;
+    margin-top: -70px;
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-text {
+    text-align: center;
+    color: #526473;
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+  
