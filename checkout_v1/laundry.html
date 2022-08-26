@@ -38,6 +38,8 @@
   <meta content="try_C1" name="checkout-funnel-name">
   <meta content="/laundry/2a.html" name="checkout-next-url">
 
+
+  
   <script type="text/javascript">
       Checkout.setNextUrlFn((cart) => {
         const targetVariants = [
@@ -47,12 +49,15 @@
         ];
         for (let i = 0; i < targetVariants.length; i++) {
           if (cart.localCart.hasVariant(targetVariants[i])) {
-            return '/receipt/';
+            return '/laundry/2a.html';
           }
         }
-        return '/receipt/';
+        return '/laundry/2a.html';
       });
     </script>
+
+
+
   <link rel="stylesheet" type="text/css" href="css/checkout.css">
   <link rel="stylesheet" href="css/intlTelInput.min.css">
 </head>
