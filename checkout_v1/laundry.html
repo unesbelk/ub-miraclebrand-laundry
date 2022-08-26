@@ -36,10 +36,9 @@
   <meta content="GB" name="checkout-default-shipping-zone">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
   <meta content="try_C1" name="checkout-funnel-name">
-  <meta content="/laundry/2a.html" name="checkout-next-url">
 
-
-  
+<!--TO CHANGE IF YOU WANT TO REDIRECT-->
+  <meta content="/receipt/" name="checkout-next-url">
   <script type="text/javascript">
       Checkout.setNextUrlFn((cart) => {
         const targetVariants = [
@@ -49,13 +48,13 @@
         ];
         for (let i = 0; i < targetVariants.length; i++) {
           if (cart.localCart.hasVariant(targetVariants[i])) {
-            return '/laundry/2a.html';
+            return '/receipt/';
           }
         }
-        return '/laundry/2a.html';
+        return '/receipt/';
       });
     </script>
-
+<!--TO CHANGE IF YOU WANT TO REDIRECT-->
 
 
   <link rel="stylesheet" type="text/css" href="css/checkout.css">
