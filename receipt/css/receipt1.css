@@ -224,7 +224,7 @@ h4 {
 }
 
 .mobile-cart-toggle .togle-price .checkout-subtotal-value:before {
-    content: "$";
+    /*content: "$";*/
 }
 
 .mobile-cart-toggle .chk-head {
